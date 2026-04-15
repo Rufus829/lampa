@@ -1,4 +1,7 @@
+let Ljus = input.lightLevel()
 basic.forever(function () {
-    led.toggle(1, 0)
-    led.plot(4, 0)
+    Ljus = input.lightLevel()
+    Ljus = Ljus * 4
+    basic.showNumber(Ljus)
+    basic.pause(2000)
 })
